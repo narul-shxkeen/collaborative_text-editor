@@ -64,6 +64,7 @@ const Editor: React.FC<Props> = (props) => {
 
   const ydoc = new Y.Doc();
   const provider = new WebsocketProvider(
+    // FIXME: use env variable
     "ws://localhost:8000/ws/editor/",
     "my-room",
     ydoc
@@ -109,7 +110,7 @@ const Editor: React.FC<Props> = (props) => {
         initialContent={state}
         placeholder="Start typing...Please be respectful :)"
         classNames={[
-          "p-4 focus:outline-none h-96 overflow-y-auto scrollbar-hide",
+          "p-4 focus:outline-none h-96 overflow-y-auto scrollbar-hide prose lg:prose-xl prose-p:m-0",
         ]}
       >
         <div className="rounded-md border">

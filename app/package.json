@@ -11,6 +11,7 @@
   "dependencies": {
     "@remirror/pm": "^2.0.3",
     "@remirror/react": "^2.0.25",
+    "@tailwindcss/typography": "^0.5.10",
     "add": "^2.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
